@@ -16,5 +16,11 @@
 - visit permutation ii 
 - sum combination sum
 ## 77 combination
-- dfs O(n!)
-- non-recursion O((n-k)!) To-do
+- dfs O(n!) python version cannot pass
+- non-recursion O((n-k)!) (Based on Stack)
+  - backtracking condition: when stack.length equal to k or the rest of pool is less than k - stack.length
+  	e.g. [1,4]-> [1] -> [2] ->[2,1] ---->[3,4] -> [3] -> [4] -> [] -> end return
+## 17 Letter Combinations of a Phone Number
+- dfs
+- O(3^n)
+- no need for backtracking
