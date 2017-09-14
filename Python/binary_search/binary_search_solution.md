@@ -7,3 +7,6 @@
 - find row then col
 - or take matrix as a array, binary search
 - handling corner case!
+# 278 find first bad version
+- binary search
+- simple
