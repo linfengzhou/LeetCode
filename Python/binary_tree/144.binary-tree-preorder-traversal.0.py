@@ -8,7 +8,7 @@
 
 class Solution(object):
 
-    def inorderTraversal(self, root):
+    def preorderTraversal(self, root):
         """
         :type root: TreeNode
         :rtype: List[int]
@@ -16,13 +16,12 @@ class Solution(object):
         res = []
         if not root:
             return res
-        cur = root
-        stack = []
-        while (cur or len(stack) != 0):
-            while cur:
-                stack.append(cur)
-                cur = cur.left
-            cur = stack.pop()
-            res.append(cur.val)
-            cur = cur.right
+        self.helper(root, res)
         return res
+
+    def helper(self, root, res):
+        res.append(root.val)
+        if root.left:
+            self.helper(root.left, res)
+        if root.right:
+            self.helper(root.right, res)

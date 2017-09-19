@@ -16,13 +16,12 @@ class Solution(object):
         res = []
         if not root:
             return res
-        cur = root
-        stack = []
-        while (cur or len(stack) != 0):
-            while cur:
-                stack.append(cur)
-                cur = cur.left
-            cur = stack.pop()
-            res.append(cur.val)
-            cur = cur.right
+        self.dfs(root, res)
         return res
+
+    def dfs(self, root, res):
+        if root.left:
+            self.dfs(root.left, res)
+        res.append(root.val)
+        if root.right:
+            self.dfs(root.right, res)
