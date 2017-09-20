@@ -27,3 +27,16 @@
   - define the return (the definition of recursion whether need addition helper to do that)
   - write divide (split the recursion) and merge(condition to merge left and right part)
   - write the exit of recursion
+# 98 validate binary search tree
+- divide and conquer:
+  - define the return (wether balance or not, the smallest number in tree, the biggest number in tree)
+  - write divide and merge(condition, how to return True? -> both parts are balance and left_max < root.val < right.min)
+  - write the exit of recursion (root is None)
+- tree traversal:
+  - inorder: two while loop
+  - use tree viz to understand the algo
+  - check res list if res[i-1]>= res[i] return False
+# 114 flatten binary tree to linked list
+- traversal(non-recursion) done!
+- divide and conquer to do 
+- traversal(recursion) to do
