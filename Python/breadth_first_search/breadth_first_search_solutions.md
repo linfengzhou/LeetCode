@@ -18,3 +18,11 @@
 - condition
   - n nodes, n-1 edges
   - all node are linked
+
+#133 clone graph
+- bfs: find all nodes
+- copy nodes: create a map old_node ->new_node
+- copy edges
+
+#Lintcode: search graph nodes
+- FIFO!!! pop(0)　 

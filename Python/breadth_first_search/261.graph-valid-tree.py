@@ -15,7 +15,7 @@ class Solution:
         target_nodes = set([0])
         queue = [0]
         while len(queue) != 0:
-            node = queue.pop()
+            node = queue.pop(0)
             total_target = graph.get(node)
             if not total_target:
                 continue
