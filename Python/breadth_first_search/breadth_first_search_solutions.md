@@ -1,9 +1,9 @@
-# 102 binary tree level order
+#102 binary tree level order
 - forgot append subtree
 - bfs
 - easy
 
-# 297 tree serilization and deserilization
+#297 tree serilization and deserilization
 - serilization
  - queue size cannot change: use index
  - if None or Not None
@@ -26,3 +26,10 @@
 
 #Lintcode: search graph nodes
 - FIFO!!! pop(0)　 
+
+#210 course scheduler ii
+- topological sort
+- count indegree and init graph first
+  - for this problem, can use list(easier)
+- bfs 
+  - condition: if indegree == 0
