@@ -26,3 +26,11 @@
 - dfs
 - O(3^n)
 - no need for backtracking
+## 131 partition palindrome
+- three part:
+  - dfs
+  - check_in_valid_parlindrome
+  - get_string
+- optimization part: is_valid_parlindrome:
+  - dynamic programming (re-do this part)
+
