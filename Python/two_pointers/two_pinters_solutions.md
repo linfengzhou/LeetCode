@@ -19,3 +19,12 @@
   - watch out duplicates:
     - check dups in every loop
     - check dups in while
+
+# 283 moves zeros
+- O(n)
+- swap when right is 0
+
+# 75 sort colors
+- solution 1: hash map
+- solution 2: two partition array
+- solution 3: one partition array(to do)
