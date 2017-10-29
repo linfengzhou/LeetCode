@@ -40,3 +40,9 @@
 - traversal(non-recursion) done!
 - divide and conquer to do 
 - traversal(recursion) to do
+# 112 path sum 
+- dfs
+  - condition: when root is a leaf, and root.val is equal to the rest target
+- better solution????
+# 113 path sum ii 
+- dfs: as 112
