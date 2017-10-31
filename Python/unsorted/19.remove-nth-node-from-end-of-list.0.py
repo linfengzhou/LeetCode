@@ -13,18 +13,17 @@ class Solution(object):
         :type n: int
         :rtype: ListNode
         """
-        if not head:
-            return head
+        if n <= 0 or not head:
+            return None
         dummy = ListNode(-1)
         dummy.next = head
-        count = 0
+        i = 0
+        while i < n:
+            head = head.next
+            i += 1
+        predelete = dummy
         while head:
-            count += 1
             head = head.next
-        node_before_remove = count - n
-        head = dummy
-        while node_before_remove > 0:
-            head = head.next
-            node_before_remove -= 1
-        head.next = head.next.next
+            predelete = predelete.next
+        predelete.next = predelete.next.next
         return dummy.next
