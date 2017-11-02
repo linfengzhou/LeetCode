@@ -32,3 +32,15 @@
 - prune condition??
 # 24 swap nodes in paris (check solution) (to do)
 - swap
+# 31 next permutation (to do)
+- step 1: loop it find the first number less than next one (reverse loop)
+  - if all of them is larger, reverse the whole list,return
+  - else
+    - find the first element larger than the numbre we find at step 1, swap them
+    - reverse  the following array after the first number's index
+# 36 valid sudoku (to do)
+- create three list of set record each row, col, and grid number
+- for loop 2-d array, check whether item already in those three lists
+  - if so, return False
+  - add this number into three lists
+- after loop return True
