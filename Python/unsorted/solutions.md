@@ -46,3 +46,14 @@
 - after loop return True
 # 38 count and say (to do)
 - check after loop(important!!!)
+# 43 multiple string (to do)
+- use 99 * 99 as example
+- check the iterator after the sub loop(should be the same condition as main loop)(the iterator may beyond the range)(similar as 3sum or 4sum loop condition)
+# 48 rotate image  (to do)
+- two step: 
+  - reverse elements by the diagnal
+  - reverse elements by the mid 
+- notice:
+  - only reverse once(how to write elegant condition)
+# 50 power(x, n) (to do)
+- binary search
