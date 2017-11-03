@@ -44,3 +44,5 @@
   - if so, return False
   - add this number into three lists
 - after loop return True
+# 38 count and say (to do)
+- check after loop(important!!!)
