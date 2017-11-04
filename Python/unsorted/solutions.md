@@ -57,3 +57,5 @@
   - only reverse once(how to write elegant condition)
 # 50 power(x, n) (to do)
 - binary search
+# 55 jump game
+- o(n) time, 0(1) space
