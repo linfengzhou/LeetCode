@@ -59,3 +59,19 @@
 - binary search
 # 55 jump game
 - o(n) time, 0(1) space
+# 56 merge intervals
+- sort first
+- draw their condition
+# 58 length_of_last_word
+- need bug free
+- run own test
+# 60 permutation-sequence (to do)(40%)
+- factorial
+- math
+# 61 rotate-list 
+- my solution: find mid-> cal length->find breakpoint
+- better: generate a cycle, go len - k
+- notice: k might larger than length
+# 66 plus one
+- carry, corner case 99, 999 
+# 67 add binary
