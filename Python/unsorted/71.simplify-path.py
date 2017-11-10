@@ -6,36 +6,19 @@ class Solution(object):
         :rtype: str
         """
 
-        cur = ''
         stack = []
-        i = 0
-        while i < len(path):
-            if path[i] == '/':
-                if cur == '.':
-                    pass
-                elif cur == '':
-                    pass
-                elif cur == '..':
-                    if len(stack) != 0:
-                        stack.pop()
-                else:
-                    stack.append(cur)
-                cur = ''
+        paths = path.split('/')
+        for sub in paths:
+            if sub == '' or sub == '.':
+                pass
+            elif sub == '..':
+                if len(stack) != 0:
+                    stack.pop()
             else:
-                cur += path[i]
-            i += 1
-
-        if cur == '.':
-            pass
-        elif cur == '':
-            pass
-        elif cur == '..':
-            if len(stack) != 0:
-                stack.pop()
-        else:
-            stack.append(cur)
+                stack.append(sub)
         return '/' + '/'.join(stack)
+
 
 # if __name__ == '__main__':
 #     a = Solution()
-#     print(a.simplifyPath('/.../'))
+#     print(a.simplifyPath('/home//foo/'))

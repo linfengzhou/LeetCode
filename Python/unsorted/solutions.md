@@ -74,4 +74,9 @@
 - notice: k might larger than length
 # 66 plus one
 - carry, corner case 99, 999 
-# 67 add binary
+# 67 add binary(check solutions)
+# 71 simplify-path
+- split is bulit-in 
+# 73
+- space o(m+n): store first row and col zero
+- space constant: whether first row and cal zero or not 
