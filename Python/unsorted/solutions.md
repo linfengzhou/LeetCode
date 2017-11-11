@@ -80,3 +80,6 @@
 # 73
 - space o(m+n): store first row and col zero
 - space constant: whether first row and cal zero or not 
+# 92(to do)
+- four node swap
+- corner case
