@@ -11,20 +11,12 @@ class Solution(object):
             return -1
 
         n = len(triangle)
-        f = [[None] * n] * n
-
-        # bottom-up
-
-        # initialize
-        for i in range(n):
-            f[n - 1][i] = triangle[n - 1][i]
-            
-
         for i in range(n - 2, -1, -1):
-            for j in range(i + 1):  # maximum of j == i
-                f[i][j] = min(f[i + 1][j], f[i + 1][j + 1]) + triangle[i][j]
+            for j in range(0, i + 1):
+                triangle[i][j] = triangle[i][j] + min(
+                    triangle[i + 1][j], triangle[i + 1][j + 1])
 
-        return f[0][0]
+        return triangle[0][0]
 
 # if __name__ == '__main__':
 #     a = Solution()
