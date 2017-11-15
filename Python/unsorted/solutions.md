@@ -83,3 +83,10 @@
 # 92(to do)
 - four node swap
 - corner case
+# 100 same-tree
+- dfs
+- iteration TLE??
+# 101 symmertric-tree
+- dfs
+- iteration
+- condition (both none, one of them is none, equal val)
