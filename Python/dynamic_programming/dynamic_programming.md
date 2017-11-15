@@ -6,3 +6,4 @@
 - function: 研究走到 x,y 这个点之前的一步
 - initialize: 起点
 - answer: 终点
+
