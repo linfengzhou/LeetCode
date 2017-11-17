@@ -111,5 +111,8 @@
 - dp 
 # 119 
 - dp 
+# 129 
+- dfs, divide and conquer
+- time(from top to bot, just sum) o(n), space(log n)
 
 
