@@ -27,14 +27,14 @@ class Solution:
                 if root.left:
                     if prev_node:
                         prev_node.next = root.left
-                    #     prev_node = prev_node.next
-                    # else:
-                    prev_node = root.left
+                        prev_node = prev_node.next
+                    else:
+                        prev_node = root.left
                 if root.right:
                     if prev_node:
                         prev_node.next = root.right
-                    #     prev_node = prev_node.next
-                    # else:
-                    prev_node = root.right
+                        prev_node = prev_node.next
+                    else:
+                        prev_node = root.right
                 root = root.next
             root = next_node

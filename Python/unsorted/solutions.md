@@ -90,3 +90,26 @@
 - dfs
 - iteration
 - condition (both none, one of them is none, equal val)
+# 105 construct binary tree from preorder and inorder traversal
+- dfs + divide and conquer 
+- use preorder to get root val, then find its position at inorder
+- find the start end index of left branch and right branch
+- corner case, exit of recursion?
+# 106 construct binary tree from inorder and postorder traversal
+- same as 105
+- better solutions?
+# 108 convert sorted array to binary search tree
+- binary search
+# 109 
+# 111 to do 
+- how to minimum the path(if it is not a leaf, should be what?)
+# 116 populating next right pointers in each node
+- recursion
+- iteration(o(1) space??)
+# 117 (to do) 
+# 118 pascal triangle
+- dp 
+# 119 
+- dp 
+
+
