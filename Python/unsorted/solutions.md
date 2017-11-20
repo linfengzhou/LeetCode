@@ -114,5 +114,12 @@
 # 129 
 - dfs, divide and conquer
 - time(from top to bot, just sum) o(n), space(log n)
+# 142 
+- math deduction
+# 143
+- 3 parts:
+  - find mid position, cut to two parts
+  - reverse second part(how to reverse a linked list? must hold head and tail)
+  - merge 
 
 
