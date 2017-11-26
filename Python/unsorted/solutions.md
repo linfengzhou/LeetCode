@@ -80,6 +80,13 @@
 # 73
 - space o(m+n): store first row and col zero
 - space constant: whether first row and cal zero or not 
+# 89 gray code
+- first solution: mathematical eq:
+  - for i range(1<<n), i ^ i //2 
+- reflect and prefix method (recursion) 
+  - get garycode(n-1) list
+  - reverse it 
+  - add 1 to highest position (1<<(n-1) | i)
 # 92(to do)
 - four node swap
 - corner case
@@ -114,6 +121,19 @@
 # 129 
 - dfs, divide and conquer
 - time(from top to bot, just sum) o(n), space(log n)
+# 137 single number ii 
+- solution 1: 
+  - use ones to record element only appear once(three times may also include, we discuss it later)
+  - use twos to record element only show twice
+  - every time element come, xor ones array(if no exist, became 1, if exist, became 0)
+    - if no exist(show twice), which means we need to rule out it didn't show at twos &(~ twos)
+  - the same operation of twos
+- solution 2:
+  - create ones, twos, threes to record element appear 
+  - first update twos (twos | (ones & i)) (if element exist in ones, should be in twos)
+  - then update ones with xor 
+  - update threes 
+  - delete element from ones and twos if there exist in threes
 # 142 
 - math deduction
 # 143
@@ -121,5 +141,15 @@
   - find mid position, cut to two parts
   - reverse second part(how to reverse a linked list? must hold head and tail)
   - merge 
+# 151 
+- easy, strip split reverse
+# 160 
+- find A tail and linked it to B
+- find entrance of circle
+- retain their original structure
+# 165
+- to do again
+# 172 
+- only need to check how many 5 in n (log5N)
 
 
