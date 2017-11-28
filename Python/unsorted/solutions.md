@@ -13,6 +13,8 @@
 # 11 Container With Most Water
 - two pointer
 - need reduce runtime(to do)  
+# 13 Roman to Integer
+- if left char is smaller than right char, res = right - left(V: 5 VI: 6, IV: 4)
 
 # 14 Longest common prefix
 - string
@@ -55,6 +57,9 @@
   - reverse elements by the mid 
 - notice:
   - only reverse once(how to write elegant condition)
+# 49 Group Anagram
+- review the definition of anagram
+- how to group the same anagram together?(check sample output) 
 # 50 power(x, n) (to do)
 - binary search
 # 55 jump game
@@ -118,6 +123,12 @@
 - dp 
 # 119 
 - dp 
+# 121 Best Time to Buy and Sell Stock
+- greedy
+- maximum is between previous profit and profit calculated by the current price and previous lowest price
+# 122 Best Time to Buy and Sell Stock II 
+- greedy
+- all of diff larger than 0
 # 129 
 - dfs, divide and conquer
 - time(from top to bot, just sum) o(n), space(log n)
@@ -151,5 +162,8 @@
 - to do again
 # 172 
 - only need to check how many 5 in n (log5N)
+# 191 
+- n & (n-1) find last 1 
+- n % 2 n >> 1 
 
 
