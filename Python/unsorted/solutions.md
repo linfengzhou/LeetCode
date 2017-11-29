@@ -87,7 +87,7 @@
 - space constant: whether first row and cal zero or not 
 # 89 gray code
 - first solution: mathematical eq:
-  - for i range(1<<n), i ^ i //2 
+  - ```for i range(1<<n)```, ```i ^ i //2 ```
 - reflect and prefix method (recursion) 
   - get garycode(n-1) list
   - reverse it 
@@ -160,10 +160,23 @@
 - retain their original structure
 # 165
 - to do again
+# 168 
+- converter(for this case, 10 -> 26)
+- recursion 
 # 172 
 - only need to check how many 5 in n (log5N)
 # 191 
 - n & (n-1) find last 1 
 - n % 2 n >> 1 
+# 201 
+- Solution 1:
+  - use a mask (111111111) to find the leftest common digits of m and n 
+  - m = 1110001, n = 1110111, mask = 1110000 
+- Solution 2:
+  - if n > m, which means the last digit for the answer is zero 
+  - move m, n to one step left, to do the same test (also need to add a zero to right)
+  
+
+
 
 
