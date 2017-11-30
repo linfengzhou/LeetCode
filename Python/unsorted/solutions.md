@@ -175,7 +175,10 @@
 - Solution 2:
   - if n > m, which means the last digit for the answer is zero 
   - move m, n to one step left, to do the same test (also need to add a zero to right)
-  
+# 202 
+- use a hash table store result
+# 203
+- what if there are consequtive series of val need to be delete?(in what circumstance you should move head to right?)
 
 
 
